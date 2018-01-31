@@ -1,6 +1,6 @@
 My dotfiles, yay!
 
-What to do when I get a new machine to remind my future self:
+What to do when I get a new Mac to remind my future self:
 
 - Install Sublime: https://www.sublimetext.com/3
 - Install my favorite Terminal profile: http://color.smyck.org/
