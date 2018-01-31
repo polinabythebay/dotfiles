@@ -14,4 +14,10 @@ What to do when I get a new machine to remind my future self:
 
   xcode-select -p
   ```
-
+- Install Homebrew
+  ```
+  Follow the instructions under "Install Homebrew" on this page: http://brew.sh.
+  At the end of the installation the installer will tell you to run brew doctor.
+  Do so.
+  Repeat this process until brew doctor is happy. A happy brew doctor says `Your system is ready to brew.`
+  ```
