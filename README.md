@@ -21,3 +21,7 @@ What to do when I get a new Mac to remind my future self:
   Do so.
   Repeat this process until brew doctor is happy. A happy brew doctor says `Your system is ready to brew.`
   ```
+
+TODO:
+
+- check out: https://github.com/andsens/homeshick
