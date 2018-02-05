@@ -25,3 +25,13 @@ What to do when I get a new Mac to remind my future self:
 TODO:
 
 - check out: https://github.com/andsens/homeshick
+
+how to unfuck sublime and get my command 
+
+https://stackoverflow.com/questions/10892368/problems-using-subl-command-in-terminal-command-not-found-no-such-file-or
+
+```
+$ sudo rm -rf /usr/local/bin/subl
+$ sudo ln -s /Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl /usr/local/bin
+$ subl .
+```
