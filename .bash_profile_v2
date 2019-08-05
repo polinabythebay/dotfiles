@@ -1,0 +1,39 @@
+#git path
+
+if [ -f $(brew --prefix)/etc/bash_completion ]; then
+  . $(brew --prefix)/etc/bash_completion
+fi
+export PATH="$(brew --prefix git)/bin:$PATH"
+
+export PATH=/usr/local/bin:$PATH
+export PATH=/bin:/sbin:/usr/bin:/usr/local/sbin:/usr/local/bin:$PATH
+export EDITOR='subl -w'
+export PATH=${PATH}:/usr/local/mysql/bin
+
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+
+export NVM_DIR="/Users/polina/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+
+# Load RVM into a shell session *as a function*
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
+
+export GITAWAREPROMPT=~/.bash/git-aware-prompt
+source "${GITAWAREPROMPT}/main.sh"
+
+# custom prompt
+PS1="(\[$txtred\]\$(~/.rvm/bin/rvm-prompt v g)\[$txtrst\])" #add ruby version before prompt
+PS1+=" polina: \W \[$txtcyn\]"         # basename of pwd
+PS1+="\$git_branch\[$txtred\]"        # prints current branch
+PS1+="\$git_dirty\[$txtrst\]\$ "    # prints * if changes have been made
+export PS1
+
+#Aliases
+alias space='/usr/local/Cellar/emacs-plus/25.1/Emacs.app/Contents/MacOS/Emacs'
+alias server='python -m SimpleHTTPServer 8000'
+alias fs='foreman start'
+alias build='bin/build-on-circle'
+alias ks='./node_modules/karma/bin/karma start'
+# Wrap git automagically:
+# eval "$(hub alias -s)"
+# eval "$(direnv hook bash)"
